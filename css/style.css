@@ -22,6 +22,7 @@ main{
 .shift-right {
 	position: absolute;
 	right : 3em;
+	left:1em;
 }
 
 .shift-right li a {
@@ -30,14 +31,14 @@ main{
 	font-size: 0.8em;
 	width: 100%;
 	padding: 0;
-	padding-right: 3em;
+	padding-right: 7%;
 	color : rgba(255, 255, 255, 0.35);
-	/*border : 0px solid #ea4a4f;*/
+	/*border-right : 1px solid rgba(255, 255, 255, 0.15);*/
 }
 
 .shift-right li a:hover {
 	padding: 0;
-	padding-right: 3em;
+	padding-right: 7%;
 	color : rgba(255, 255, 255, 0.55);
 	border-right : 1px solid #ea4a4f;
 	border-left : 0px;
@@ -45,7 +46,7 @@ main{
 
 .shift-right li a.active {
 	padding: 0;
-	padding-right: 3em;
+	padding-right: 7%;
 	font-weight: bolder;
 	color : #fff;
 	border-right : 2px solid #ea4a4f;
@@ -62,6 +63,19 @@ main{
 
 .content .section {
 	min-height: 100% !important;
+	overflow: auto;
+	padding: 2% 8% 2% 8%;
+}
+
+.section-head {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 5em;
+}
+
+.section-body {
+	font-family: 'Raleway', sans-serif;	
+	font-size: 1.3em;
+	/*font-weight: ;*/
 }
 
 #home{
@@ -69,40 +83,148 @@ main{
 	color: #fff;
 }
 
+#home .logo {
+	opacity: 0.9;
+	height: 128px;
+	width: 128px;
+}
+
 #home h2 {
-	margin-top: 1em;
-	/*margin-left: 0.5em;*/
+	margin-top: 0.7em;
 	font-family:'Raleway', sans-serif;
 	font-size: 10em;	
 }
 
 #home h4 {
-	/*margin-top: 0.5em;*/
-	/*margin-left: 2em;*/
 	font-family: 'Alegreya Sans SC', sans-serif;
 	font-size: 3em;
 }
 
-#introduction{
+#home .round-border-img {
+	width: 10%;
+	height: auto;
+	border-radius: 15%;
+	margin: 2em;
+}
+
+#about{
 	background-color: #f2c54e;
+	color : #00695c;
+}
+
+#about span{
+	font-weight: bolder;
+}
+
+#about a{
+	font-weight: bolder;
+	color: #00695c;
+}
+
+#about a:hover{
+	text-decoration: underline;
+}
+
+#about .fa{
+	font-weight: bolder;
+	font-size: 0.5em;
+	margin-left: 0.5em;
+	margin-top: -0.5em;
+}
+
+#install{
+	background-color: #a490d8;
+	color : #263238;
 }
 
 #downloads{
-	background-color: #a490d8;
-}
-
-#docs{
 	background-color: #fff;
+	color: #312450;
 }
 
-#howto{
+#downloads table{
+	margin-top: 2em;
+}
+
+#downloads table th {
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+#downloads table .component {
+	font-weight: bolder;
+	font-size: 0.9em;
+}
+
+#downloads table .comp-download {
+	font-size: 0.8em;
+}
+
+#downloads table .comp-source {
+	font-size: 0.8em;
+}
+
+#downloads table a {
+	color: #312450;
+}
+
+#downloads table a:hover {
+	text-decoration: underline;
+}
+
+#downloads .fa {
+	margin-left: 0.5em;
+	color: #205081;
+}
+
+#tutorials{
 	background-color: #a490d8;
+	color : #263238;
 }
 
 #people{
 	background-color: #f2c54e;
+	color : #00695c;
+}
+
+#people img{
+	width: 60%;
+	height: auto;
+}
+
+#people .name {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+#people .bio {
+	font-size: 0.8em;
+}
+
+#people .desc {
+
+}
+
+#people .desc span{
+	font-weight: bolder;
+}
+
+#people .fa {
+	color: #205081;
+	margin-left: 0.5em;
 }
 
 #contact{
 	background-color: #5e42a6;
+	color: #fff;
+	padding-top: 10%;
+}
+
+#contact h5 {
+	font-size: 1.5em;
+}
+
+#contact a {
+	font-weight: bolder;
+	color: #fff;
 }

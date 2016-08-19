@@ -5,9 +5,9 @@
 		<title>Classilist</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Raleway:100" rel="stylesheet">
-	    <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
-	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100|Open+Sans|Poiret+One:400|Alegreya+Sans+SC:100|Raleway:100,400|Josefin+Sans:400" rel="stylesheet">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.css">
+	    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 	    <link rel="stylesheet" type="text/css" href="css/style.css"></link>
 	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	</head>
@@ -16,57 +16,237 @@
 			<div class = "row">
 
 				<!-- Sidebar - ScrollSpy -->
-				<div class = "col s3 hide-on-small-only left-navigator valign-wrapper">
+				<div class = "col s3 left-navigator valign-wrapper">
 					<ul class = "shift-right section table-of-contents">
 				      	<li class="right-align"><p><a href="#home">HOME</a></p></li>					
-				      	<li class="right-align"><p><a href="#introduction">ABOUT</a></p></li>
+				      	<li class="right-align"><p><a href="#about">ABOUT</a></p></li>
+				      	<li class="right-align"><p><a href="#install">INSTALLATION</a></p></li>
 				      	<li class="right-align"><p><a href="#downloads">DOWNLOADS & LINKS</a></p></li>
-				      	<li class="right-align"><p><a href="#docs">INSTALLATION & USAGE</a></p></li>
-				      	<li class="right-align"><p><a href="#howto">TUTORIALS</a></p></li>
-				      	<li class="right-align"><p><a href="#people">WHO ARE WE</a></p></li>
+				      	<li class="right-align"><p><a href="#tutorials">TUTORIALS</a></p></li>
+				      	<li class="right-align"><p><a href="#people">OUR TEAM</a></p></li>
 				      	<li class="right-align"><p><a href="#contact">GET IN TOUCH</a></p></li>
 				    </ul>
 				</div>
 
-				<div class = "col s9 offset-s3 content">
+				<div class = "col s9 offset-m3 content">
 					<div id = "home" class = "section scrollspy center">
-						<h2><span><img class="responsive-img" src="icons/96.png"></span>&nbspClassilist</h2>
-						<h4>Next step towards Visualization</h4>
+						<!-- <img class="logo responsive-img" src="gsocLogo.png"> -->
+						<h2 class = "flow-text"><span><img class="logo responsive-img" src="icon-white/icon.png"></span>Classilist</h2>
+						<h4 class = "flow-text">Next step towards Visualization</h4>
+						<a href = "https://summerofcode.withgoogle.com/" target="_blank">
+							<img class="logo responsive-img round-border-img" src="gsocLogo.png">
+						</a>
+						<a href ="http://www.iue.tuwien.ac.at/cse/index-2.html" target="_blank">
+							<img class="logo responsive-img round-border-img" src="tuwienLogo.png">
+						</a>
 					</div>
 
-					<div id = "introduction" class = "section scrollspy">
+					<div id = "about" class = "section scrollspy">
+						<div class = "section-head center">
+							About Classilist
+						</div>
+						<div class = "section-body">
+							<p>
+								<span>Probabilistic Models</span> involve the uncertainty in the modelling that causes it to less sensitivity to noise phenomenon and hence is widely used alongside traditional Machine Learning Techniques and <span>Probabilistic Classification</span> constitutes a major part of it. 
+							</p>
+							<p>
+								Being a widely preferred field in predictive analytics, Graphicals Models to analyse the prababilistic classification data are a must.
+							</p>
+							<p>
+								<span>Classilist</span> is an Open-Source Visualization Dashboard, aimed towards Visual Analytics for Probabilistic Classification Data. Having been developed as a <a href = "https://summerofcode.withgoogle.com/" target="_blank">Google Summer of Code'16<i class="fa fa-external-link" aria-hidden="true"></i></a> Project, it is based on a High Quality <a href = "http://www.cvast.tuwien.ac.at/node/669" target = "_blank"> Research Work<i class="fa fa-external-link" aria-hidden="true"></i></a> done at <a href ="http://www.iue.tuwien.ac.at/cse/index-2.html" target="_blank">CSE department of TUWien<i class="fa fa-external-link" aria-hidden="true"></i></a>. 
+							</p>
+							<p>
+								Classilist sports some really awesome features like - <span>Class Probability Distribution, Feature View Analysis, support for Rapidminer, KNIME and R</span> to ease data formatting and export which will be used by classilist and also support for <span>WEKA</span> will soon be introduced.
+							</p>
+						</div>
+					</div>					
+
+					<div id = "install" class = "section scrollspy">
+						<div class = "section-head center">
+							Installation
+						</div>
+						<div class = "section-body">
+							Documented and Video Instructions to install Classilist and its support components
+						</div>
 					</div>
 
 					<div id = "downloads" class = "section scrollspy">
+						<div class = "section-head center">
+							Downloads & Links
+						</div>
+						<div class = "section-body">
+							Direct download and BitBucket Source links for all Classilist components and Demo for CLassilist Interface.
+							<table class="bordered">
+								<thead>
+									<tr>
+              							<th data-field="comp">Component</th>
+              							<th data-field="download">Source Link</th>
+              							<th data-field="source">Download Link</th>
+          							</tr>
+								<thead>
+					            <tbody>
+					          		<tr>
+					            		<td class = "component">Classilist Interface</td>
+							            <td class = "comp-source">
+							            	<a href = "https://bitbucket.org/typhon23/classilist/src" target = "_blank">
+							            		Source<i class="fa fa-download" aria-hidden="true"></i>
+							            	</a>
+							            </td>
+							            <td class = "comp-download">
+								            <a href = "downloads/classilist.zip" download>
+								            	Download<i class="fa fa-bitbucket-square" aria-hidden="true"></i>
+								            </a>
+								        </td>
+							        </tr>
+							        <tr>
+					            		<td class = "component">R Support Package</td>
+							            <td class = "comp-source">
+							            	<a href = "https://bitbucket.org/typhon23/classilistr/src" target = "_blank">
+							            		Source<i class="fa fa-download" aria-hidden="true"></i>
+							            	</a>
+							            </td>
+							            <td class = "comp-download">
+							            	<a href = "downloads/classilistR.zip" download>
+							            		Download<i class="fa fa-bitbucket-square" aria-hidden="true"></i>
+							            	</a>
+							            </td>
+							        </tr>
+							        <tr>
+					            		<td class = "component">Rapidminer Operator Plugin</td>
+							            <td class = "comp-source">
+							            	<a href = "https://bitbucket.org/typhon23/classilistrapidminer/src" target = "_blank">
+							            		Source<i class="fa fa-download" aria-hidden="true"></i>
+							            	</a>
+							            </td>
+							            <td class = "comp-download">
+							            	<a href = "downloads/classilistRM.zip" download>
+							            		Download<i class="fa fa-bitbucket-square" aria-hidden="true"></i>
+							            	</a>
+							            </td>
+							        </tr>
+							        <tr>
+					            		<td class = "component">KNIME Node Plugin</td>
+							            <td class = "comp-source">
+							            	<a href = "https://bitbucket.org/typhon23/classilistknime/src" target = "_blank">
+							            		Source<i class="fa fa-download" aria-hidden="true"></i>
+							            	</a>
+							            </td>
+							            <td class = "comp-download">
+							            	<a href = "downloads/classilistKNIME.zip" download>
+							            		Download<i class="fa fa-bitbucket-square" aria-hidden="true"></i>
+							            	</a>
+							            </td>
+							        </tr>
+							        <tr>
+					            		<td class = "component">Weka Extension</td>
+							            <!-- <td class = "comp-source">
+							            		<a href = "https://bitbucket.org/typhon23/classilistweka/src" target = "_blank">
+							            			Source<i class="fa fa-download" aria-hidden="true"></i>
+							            		</a>
+							            	</td>
+							            <td class = "comp-download">
+							            	<a href = "downloads/classilistWEKA.zip" download>
+							            		Download<i class="fa fa-bitbucket-square" aria-hidden="true"></i>
+							            	</a>
+							            </td> -->
+							            <td> Coming soon ...<i class="fa fa-clock-o" aria-hidden="true"></i></td>
+							            <td></td>
+							        </tr>
+						        </tbody>
+					      	</table>
+						</div>
 					</div>
 
-					<div id = "docs" class = "section scrollspy">
-					</div>
-
-					<div id = "howto" class = "section scrollspy">
+					<div id = "tutorials" class = "section scrollspy">
+						<div class = "section-head center">
+							Tutorials
+						</div>
+						<div class = "section-body row">
+							Documented and Video tutorials to get you started with Classilist
+						</div>
 					</div>
 
 					<div id = "people" class = "section scrollspy">
+						<div class = "section-head center">
+							Our Team
+						</div>
+						<div class = "section-body">
+							<div class = "col s4 bilal center">
+								<img class = "responsive-img circle" src = "images/bilal.jpg">
+								<p class = "name">Bilal<br> Alsallakh</p>
+								<p class = "bio">
+									Research Scientist, Bosch<br>
+									Palo Alto, CA
+								</p>
+								<p class = "desc">
+									<span>Researcher & Mentor</span><br>
+								</p>
+								<p class = "social">
+									<a href = "https://www.linkedin.com/in/bilalalsallakh" target = "_blank">
+										<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+									</a>
+								</p>
+							</div>
+							<div class = "col s4 emma center">
+								<img class = "responsive-img circle" src = "images/emma.jpg">
+								<p class = "name">Emma<br> Beauxis-Aussalet</p>
+								<p class = "bio">
+									PhD Student at CWI<br>
+									Netherlands
+								</p>
+								<p class = "desc">
+								<span>Researcher & Mentor</span><br>
+								</p>
+								<p class = "social">
+									<a href = "https://www.linkedin.com/in/emma-beauxis-aussalet-41297a4" target = "_blank">
+										<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+									</a>
+								</p>
+							</div>
+							<div class = "col s4 medha center">
+								<img class = "responsive-img circle" src = "images/medha.jpg">
+								<p class = "name">Medha <br>Katehara</p>
+								<p class = "bio">
+									GSoC'16 Intern<br>
+									India
+								</p>
+								<p class = "desc">
+									<span>Developer & Learner</span>
+								</p>
+								<p class = "social">
+									<a href = "https://www.linkedin.com/in/medhakatehara" target = "_blank">
+										<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+									</a>
+									<a href = "https://bitbucket.org/typhon23" target = "_blank">
+										<i class="fa fa-bitbucket-square" aria-hidden="true"></i>
+									</a>
+								</p>
+							</div>
+						</div>
 					</div>
 
-					<div id = "contact" class = "section scrollspy">
+					<div id = "contact" class = "section scrollspy center">
+						<div class = "section-head">
+							Get In Touch
+						</div>
+						<div class = "section-body">
+							<h5> Need assistance ... found a bug ... or have questions ??</h5>
+							<p class = "msg"> Go on then ... we are all ears to hear from you.</p>
+							<p class = "mail">
+								<i class="fa fa-envelope" aria-hidden="true"></i> 
+								medha.classilist@gmail.com</p>
+							<p class = "msg"> 
+								Don't forget to checkout our <a href = "#install">Installation</a> and <a href = "#tutorials">Tutorials</a> sections. May be you find your answer there already. 
+							</p>
+						</div>
 					</div>					
 				</div>
 			</div>
 	    </main>
-		<!-- Footer -->
-	<!-- <footer class="page-footer">
-	          <div class="footer-copyright">
-	            <div class="container">
-	            © 2014 Copyright Text
-	            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-	            </div>
-	          </div>
-	        </footer> -->
 
 		<!-- Scripts -->
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
-      <script type="text/javascript" src="js/script.js" ></script>
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.js"></script>
+	    <script type="text/javascript" src="js/script.js" ></script>
 	</body>
 </html>
