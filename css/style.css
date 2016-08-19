@@ -12,6 +12,10 @@ html, body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+.dont-display {
+	display: none;
+}
+
 main{
 	min-height: 100% !important;
 }
