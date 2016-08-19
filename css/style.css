@@ -33,7 +33,6 @@ main{
 	padding: 0;
 	padding-right: 7%;
 	color : rgba(255, 255, 255, 0.35);
-	/*border-right : 1px solid rgba(255, 255, 255, 0.15);*/
 }
 
 .shift-right li a:hover {
@@ -89,7 +88,7 @@ main{
 }
 
 #home h2 {
-	margin-top: 0.7em;
+	margin-top: 1em;
 	font-family:'Raleway', sans-serif;
 	font-size: 10em;	
 }
