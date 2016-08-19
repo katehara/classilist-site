@@ -75,7 +75,6 @@ main{
 .section-body {
 	font-family: 'Raleway', sans-serif;	
 	font-size: 1.3em;
-	/*font-weight: ;*/
 }
 
 #home{
@@ -98,13 +97,6 @@ main{
 #home h4 {
 	font-family: 'Alegreya Sans SC', sans-serif;
 	font-size: 3em;
-}
-
-#home .round-border-img {
-	width: 10%;
-	height: auto;
-	border-radius: 15%;
-	margin: 2em;
 }
 
 #about{
@@ -227,4 +219,11 @@ main{
 #contact a {
 	font-weight: bolder;
 	color: #fff;
+}
+
+#contact .round-border-img {
+	width: 10%;
+	height: auto;
+	border-radius: 15%;
+	margin: 2em;
 }
