@@ -276,7 +276,7 @@ Contact: medha.classilist@gmail.com
 								      			</li>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				You find the installed extension in the form of menu extension.<br>
+								      				You will find the installed extension in the form of menu extension.<br>
 								      			</li>
 								      		</ul>
 							      			<h6 class = "msg" style="padding-left:2em; padding-bottom:1em; font-weight: bolder">
@@ -388,7 +388,225 @@ Contact: medha.classilist@gmail.com
 							Tutorials
 						</div>
 						<div class = "section-body row">
-							Documented and Video tutorials to get you started with Classilist. 
+							Documented and Video tutorials to get you started with Classilist. Video tutorials for installation can be accessed by <i class="fa fa-video-camera" aria-hidden="true"></i> button at the beginning of every section.
+							<ul class="collapsible popout" data-collapsible="accordion">
+<!-- Install Classilist							 -->
+								<li>
+									<div class="collapsible-header active">
+							      		<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+							      		Install Classilist Interface
+							      	</div>							    	  
+							      	<div class="collapsible-body">
+							      		<h5> 
+								      		Download & Install
+								      		<a href = "#!" target = "Installation_frame">
+								      			<i class="fa fa-video-camera" aria-hidden="true"></i>
+								      		</a>
+								      	</h5>
+								      		<ul>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Download 'Classilist Interface' from <a href = "#downloads">Downloads & Links</a> section<br>
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Extract the zipped file (classilist.zip) and copy into the desired directory<br>
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Now your Classilist Installation directory is
+								      				<span class = "code"> 
+								      					[current-directory]/classilist
+								      				</span>
+								      			</li>
+								      		</ul>
+							      	</div>
+							    </li>
+<!-- Install R package							     -->
+							    <li>
+									<div class="collapsible-header">
+							      		<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+							      		Install R Package
+							      	</div>		
+							      	<div class="collapsible-body">				    	  
+								      	<h5> 
+								      		Method 1 : Install from Source
+								      		<a href = "#!" target = "Installation_frame">
+								      			<i class="fa fa-video-camera" aria-hidden="true"></i>
+								      		</a>
+								      	</h5>
+								      		<ul>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Install Package 'devtools' [
+								      				<a href = "https://cran.r-project.org/web/packages/devtools/README.html" target = "_blank"> 
+								      					How to install?
+								      				</a>
+								      				]
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Load Package 'devtools'<br>
+								      				<span class = "code"> 
+								      					library(devtools)
+								      				</span>
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Install and Load Package 'classilistR' from BitBucket User : typhon23 and Repo : classilistR<br>
+								      				<span class = "code">install_bitbucket("typhon23/classilistR")</span>
+								      				<br>
+													<span class = "code">library(classilistR)</span>
+								      			</li>
+								      		</ul>
+								      	<h5> 
+								      		Method 2 : Download & Install
+								      		<a href = "#!" target = "Installation_frame">
+								      			<i class="fa fa-video-camera" aria-hidden="true"></i>
+								      		</a>
+								      	</h5>
+								      		<ul>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Download 'R support package' from <a href = "#downloads">Downloads & Links</a> section<br>
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Copy the zipped file (classilistR.zip) into the current working directory.<br>
+								      				Path of Current Working Directory can be found by
+								      				<span class = "code"> 
+								      					getwd()
+								      				</span>
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Install and Load Package 'classilistR'<br>
+								      				<span class = "code">install.packages("classilistR", repos = NULL)</span>
+								      				<br>
+													<span class = "code">library(classilistR)</span>
+								      			</li>
+								      		</ul>
+									</div>
+							    </li>
+<!-- Install rapidminer plugin							     -->
+							    <li>
+							      	<div class="collapsible-header">
+							      		<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+							      		Install RapidMiner Plugin
+							      	</div>
+							      	<div class="collapsible-body">
+							      		<h5> 
+								      		Download & Install 
+								      		<a href = "#!" target = "Installation_frame">
+								      			<i class="fa fa-video-camera" aria-hidden="true"></i>
+								      		</a>
+								      	</h5>
+								      		<ul>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Download 'RapidMiner Operator Extension' from <a href = "#downloads">Downloads & Links</a> section.
+								      				If you are asked to 'keep' or 'discard' the .jar file, be sure to choose keep.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Copy the .jar file (classilistRM-1.0.0-all.jar) to the RapidMiner plugins folder.
+								      				Path of RapidMiner plugins folder is :
+								      				<span class = "code"> 
+								      					[rapidminer-studio-home]/lib/plugins
+								      				</span>
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Start (Restart if already running) RapidMiner. In the operator tree, find Operator
+								      				<span class = "code">
+								      					Extensions>Classilist>Classilist&nbspGroup>Classilist&nbspExport
+								      				</span>
+								      			</li>
+								      		</ul>
+							      	</div>
+							    </li>
+<!-- Install knime plugin							     -->
+							    <li>
+									<div class="collapsible-header">
+							      		<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+							      		Install KNIME Plugin
+							      	</div>							    	  
+							      	<div class="collapsible-body">
+							      		<h5> 
+								      		Download & Install
+								      		<a href = "#!" target = "Installation_frame">
+								      			<i class="fa fa-video-camera" aria-hidden="true"></i>
+								      		</a>
+								      	</h5>
+								      		<ul>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Download 'KNIME Node Plugin' from <a href = "#downloads">Downloads & Links</a> section. 
+								      				If you are asked to 'keep' or 'discard' the .jar file, be sure to choose keep.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Copy the .jar file (org.classilist.knime_1.0.0.jar) to the KNIME dropins folder. 
+								      				Path of KNIME dropins folder is :
+								      				<span class = "code"> 
+								      					[KNIME-home]/dropins
+								      				</span>
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Start (Restart if already running) KNIME. In your node tree, find Node
+								      				<span class = "code">
+								      					Classilist
+								      				</span> 
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				This will also work on Eclipse Installation of KNIME. 
+								      			</li>
+								      		</ul>
+							      	</div>
+							    </li>
+<!-- Install WEKA Plugin							     -->
+							    <li>
+									<div class="collapsible-header">
+							      		<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+							      		Install WEKA Plugin
+							      	</div>							    	  
+							      	<div class="collapsible-body">
+							      		<h5> 
+								      		Download & Install  
+								      		<a href = "#!" target = "Installation_frame">
+								      			<i class="fa fa-video-camera" aria-hidden="true"></i>
+								      		</a>
+								      	</h5>
+								      		<ul>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Download 'WEKA Extension' from <a href = "#downloads">Downloads & Links</a> section<br>
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Start WEKA, go to 'Tools' in Menu-bar, click on 'Package Manager' 
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Select 'File/URL' in top right corner.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Browse and select the downloaded zipped file (classilistWEKA.zip) and click 'Open/OK'.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				You will find the installed extension in the form of menu extension.<br>
+								      			</li>
+								      		</ul>
+							      			<h6 class = "msg" style="padding-left:2em; padding-bottom:1em; font-weight: bolder">
+							      				WEKA Plugin is in testing phase. It will be made available in the <a href = "#downloads">Downloads & Links</a> section soon.
+							      			</h6>
+							      	</div>
+							    </li>
+							</ul>
 						</div>
 					</div>
 <!-- People Section					 -->

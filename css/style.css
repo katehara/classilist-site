@@ -145,8 +145,12 @@ main{
 	font-size: 1em;
 }
 
+#install .collapsible-header.active {
+	color : #fff;
+}
+
 #install .collapsible-body {
-	background-color: #D3CDD7;
+	background-color: #fff;
 	color: #263238;
 	font-size: 0.8em;
 }
@@ -225,6 +229,53 @@ main{
 #tutorials{
 	background-color: #a490d8;
 	color : #263238;
+}
+
+#tutorials .collapsible-header {
+	background-color: #4B4966;
+	color: #D3CDD7;
+	font-size: 1em;
+}
+
+#tutorials .collapsible-header.active {
+	color : #fff;
+}
+
+#tutorials .collapsible-body {
+	background-color: #fff;
+	color: #263238;
+	font-size: 0.8em;
+}
+
+#tutorials .collapsible-body h5 {
+	margin: 0;
+	padding: 1em;
+}
+
+#tutorials .collapsible-body ul{
+	margin: 0;
+	padding: 2em;
+	padding-top: 0;
+}
+
+#tutorials .collapsible-body a{
+	font-size: 0.9em;
+	color: #4B4966;
+	font-weight: bolder;
+}
+
+#tutorials .fa-video-camera{
+	color: #e52d27;
+}
+
+#tutorials .collapsible-body .fa-caret-right{
+	padding-right: 1em;
+}
+
+#tutorials .code {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 0.9em;
+	padding: 0 0.5em;
 }
 
 #people{
