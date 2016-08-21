@@ -157,6 +157,7 @@ main{
 	background-color: #fff;
 	color: #263238;
 	font-size: 0.8em;
+	padding-bottom: 1.5em;
 }
 
 #install .collapsible-body h5 {
@@ -166,8 +167,7 @@ main{
 
 #install .collapsible-body ul{
 	margin: 0;
-	padding: 2em;
-	padding-top: 0;
+	padding: 0 2em;
 }
 
 #install .collapsible-body li{
@@ -264,6 +264,7 @@ main{
 	background-color: #fff;
 	color: #263238;
 	font-size: 0.8em;
+	padding-bottom: 1.5em;
 }
 
 #tutorials .collapsible-body h5 {
@@ -273,12 +274,15 @@ main{
 
 #tutorials .collapsible-body ul{
 	margin: 0;
-	padding: 2em;
-	padding-top: 0;
+	padding: 0 2em;
 }
 
-#install .collapsible-body li{
+#tutorials .collapsible-body li{
 	margin-bottom: 0.2em;	
+}
+
+#tutorials .collapsible-body li .list-header{
+	font-weight: bolder;
 }
 
 #tutorials .collapsible-body a{

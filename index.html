@@ -765,11 +765,11 @@ Contact: medha.classilist@gmail.com
 							    <li>
 									<div class="collapsible-header">
 							      		<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-							      		How to begin with Classilist Interface
+							      		How to begin with Classilist Interface (Recommended Read)
 							      	</div>							    	  
 							      	<div class="collapsible-body">
 							      		<h5> 
-								      		Video Tutorial
+								      		Launch Interface
 								      		<a href = "#!" target = "Usage_frame">
 								      			<i class="fa fa-video-camera" aria-hidden="true"></i>
 								      		</a>
@@ -782,60 +782,358 @@ Contact: medha.classilist@gmail.com
 								      			<li> 
 								      				<i class="fa  fa-cog" aria-hidden="true"></i>
 								      				Go to Classilist Installation Directory and open
-								      				<span class = "code">index.html</span> in browser. This will launch the Classilist Interface.
+								      				<span class = "code">index.html</span> in browser. OR Run it on <span class = "code">localhost</span><br>
+								      				This will launch the Classilist Interface.
 								      			</li>
 								      			<li> 
 								      				<i class="fa  fa-cog" aria-hidden="true"></i>
 								      				Go to Classilist Installation Directory and open
 								      				<span class = "code">index.html</span> in browser. This will launch the Classilist Interface.
 								      			</li>
+								      		</ul>
+								      	<h5> 
+								      		Interface Structure
+								      		<a href = "#!" target = "Usage_frame">
+								      			<i class="fa fa-video-camera" aria-hidden="true"></i>
+								      		</a>
+								      	</h5>
+								      	<!-- <img class = "responsive-img" src = ""> -->
+								      		<ul>
 								      			<li> 
-								      				<i class="fa  fa-cog" aria-hidden="true"></i>
-								      				Interface can be launched from
-								      				<span class = "code">
-								      					Preprocess
-								      				</span> tab.
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				<span class = "list-header">Controls : Left Pane - Top</span><br>
+								      				This section contains the controls to show or hide data based on various categories in the Probability Histograms in the Central Pane. (See : 'More into controls')
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				<span class = "list-header">Summary Distribution: Left Pane - Bottom</span><br>
+								      				This section contains the histogram showing distribution of False Negatives, False Positives and True Positives. (See : 'More into Summary Distribution')
 								      			</li>
 								      			<li> 
 								      				<i class="fa  fa-cog" aria-hidden="true"></i>
-								      				Move to the
-								      				<span class = "code">
-								      					Classify
-								      				</span> tab, select<span class = "code">Output predictions options</span> in the <span class = "code">More options</span> dialog.
+								      				<span class = "list-header">Class Probability Distribution : Central Pane</span><br>
+								      				This section contains histograms showing probability distribution of samples for each Target class. (See : 'More into Class Probability Distribution')
 								      			</li>
 								      			<li> 
 								      				<i class="fa  fa-cog" aria-hidden="true"></i>
-								      				Right-click on the respective results history item and select 
-								      				<span class = "code">
-								      					Re-evaluate model
-								      				</span> on current test set to output the predictions.
+								      				<span class = "list-header">Feature View : Right Pane - Tab 1</span><br>
+								      				This section cntains Box Plots for all the features showing their distribution. One set (visible always) corresponds to complete dataset, another set (visible only for selections) corresponds to selections. (See : 'More into Feature View')
 								      			</li>
 								      			<li> 
 								      				<i class="fa  fa-cog" aria-hidden="true"></i>
-								      				Move to the <span class = "code">Classilist</span> tab.
+								      				<span class = "list-header">Confusion Matrix : Right Pane - Tab 2</span><br>
+								      				This section contains Confusion Matrix with some controls for better insight. (See : 'More into Confusion Matrix')
 								      			</li>
 								      			<li> 
 								      				<i class="fa  fa-cog" aria-hidden="true"></i>
-								      				Set <span class = "code">Classilist location</span> parameter to
-								      				<span class = "code">[classilist-installation-directory]</span>. 
-								      			</li>
-								      			<li> 
-								      				<i class="fa  fa-cog" aria-hidden="true"></i>
-								      				Click <span class = "code">Execute</span> 
-								      			</li>
-								      			<li> 
-								      				<i class="fa  fa-cog" aria-hidden="true"></i>
-								      				Go to Classilist Installation Directory and open
-								      				<span class = "code">index.html</span> in desired browser.
+								      				<span class = "list-header">Data : Right Pane - Tab 3</span><br>
+								      				This section contains data samples (max 500 at a time). This area is more useful for selections when it display samples corresponding to selection only. (See : 'More into Data')
 								      			</li>
 								      		</ul>
 							      	</div>
 							    </li>
+<!-- Tutorial COntrols -->
+							    <li>
+									<div class="collapsible-header">
+							      		<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+							      		More into Controls
+							      	</div>							    	  
+							      	<div class="collapsible-body">
+							      		<h5> 
+								      		Video Tutorial
+								      		<a href = "#!" target = "Usage_frame">
+								      			<i class="fa fa-video-camera" aria-hidden="true"></i>
+								      		</a>
+								      	</h5>
+								      	<!-- <img class = "responsive-img" src = ""> -->
+								      		<ul>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				<span class = "list-header">TN Switch :</span><br>
+								      				Show (on) and hide (off) True Negatives of class probability distribution in Central Pane. Turned ON by default.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				<span class = "list-header">FN Switch :</span><br>
+								      				Show (on) and hide (off) False Negatives of class probability distribution in Central Pane. Turned ON by default.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				<span class = "list-header">TP Switch :</span><br>
+								      				Show (on) and hide (off) True Positives of class probability distribution in Central Pane. Turned ON by default.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				<span class = "list-header">FP Switch :</span><br>
+								      				Show (on) and hide (off) False Positives of class probability distribution in Central Pane. Turned ON by default.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				<span class = "list-header">High TP filter</span><br>
+								      				Slider to partially hide True Positives of class probability distribution in Central Pane. True Positives with probabilities of white colored part of slider are hidden. Value is 1.0 by default i.e. all True Positives are turned ON.
+								      			</li>
+								      			<li> 
+								      				<i class="fa  fa-cog" aria-hidden="true"></i>
+								      				<span class = "list-header">Low TN filter</span><br>
+								      				Slider to partially hide True Negatives of class probability distribution in Central Pane. True Negatives with probabilities of white colored part of slider are hidden. Value is 0.1 by default i.e. all True Negatives below probability 0.1 of belonging to Target class  are turned OFF but can be turned on by adjusting the slider.
+								      			</li>
+								      			<li> 
+								      				<i class="fa  fa-cog" aria-hidden="true"></i>
+								      				<span class = "list-header">Probability range filter</span><br>
+								      				Slider to adjust the probability range of all the categories in all class probability distribution in Central Pane. Includes all probabilities by default.
+								      			</li>
+								      			<li> 
+								      				<i class="fa  fa-cog" aria-hidden="true"></i>
+								      				<span class = "list-header">Rebin Slider</span><br>
+								      				Slider to adjust the bins of histograms of class probability distribution in Central Pane for better and finer insights into probability distribution. Set to 10 bins by default.
+								      			</li>
+								      			<li> 
+								      				<i class="fa  fa-cog" aria-hidden="true"></i>
+								      				<span class = "list-header">Reset Button</span><br>
+								      				Reverses any changes made to the sliders and resets histograms to default values.
+								      			</li>
+								      			<li> 
+								      				<i class="fa  fa-cog" aria-hidden="true"></i>
+								      				<span class = "list-header">Apply Button</span><br>
+								      				Applies any changes made to the above four sliders don't take effect until this button is clicked. This button applies the new settings to the histograms in central pane.  
+								      			</li>
+								      			<li> 
+								      				<i class="fa  fa-cog" aria-hidden="true"></i>
+								      				<span class = "list-header">Clear selection button</span><br>
+								      				Removes selections (See : 'What are selections') and brings dashboard to universal state.
+								      			</li>
+								      		</ul>
+							      	</div>
+							    </li>
+<!-- Tutorial summary histogram							     -->
+							    <li>
+									<div class="collapsible-header">
+							      		<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+							      		More into Summary Distribution
+							      	</div>							    	  
+							      	<div class="collapsible-body">
+							      		<h5> 
+								      		Video Tutorial
+								      		<a href = "#!" target = "Usage_frame">
+								      			<i class="fa fa-video-camera" aria-hidden="true"></i>
+								      		</a>
+								      	</h5>
+								      	<!-- <img class = "responsive-img" src = ""> -->
+								      		<ul>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				This histogram shows the summary of dataset grouped by the Target classe of samples.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				Each class corresponds to a bar in the histogram which is further divided into three parts : True Positives, False Positives and False Negatives. 
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				It doesn't show True negatives due their large values which overshadows other categories and also adds little to the analysis.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				This is important to highlight a specific category of a particular class in selections (See : 'What are selections').
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				Hover over any of the partial bars displays the target class with the number of instance corresponding to the bar.
+								      			</li>
+								      		</ul>
+							      	</div>
+							    </li>		
+<!-- Tutorial probaility histograms							     -->
+							    <li>
+									<div class="collapsible-header">
+							      		<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+							      		More into Class Probability Distribution
+							      	</div>							    	  
+							      	<div class="collapsible-body">
+							      		<h5> 
+								      		Video Tutorial
+								      		<a href = "#!" target = "Usage_frame">
+								      			<i class="fa fa-video-camera" aria-hidden="true"></i>
+								      		</a>
+								      	</h5>
+								      	<!-- <img class = "responsive-img" src = ""> -->
+								      		<ul>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				This section has a histogram for each class which shows the distribution of dataset w.r.t that class.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				Data set is divided into groups (equal to no. of bins) by the probability of data sample of being classified into that class. 
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				Each group is further divided into categories of True Positives, true Negatives, False Positives and False Negatives to quantify the peroformance of classifier for that particular class.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				These histograms are affected by the left controls and also generate selections (See : 'What are selections') hence serve the best analytical selections for analysis and classifier performance measure.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				Hover over any of the partial bars displays the probability of the corresponding data of being classified into that class, category and number of such instances.
+								      			</li>
+								      		</ul>
+							      	</div>
+							    </li>
+<!-- Tutorial features						     -->
+							    <li>
+									<div class="collapsible-header">
+							      		<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+							      		More into Feature View
+							      	</div>							    	  
+							      	<div class="collapsible-body">
+							      		<h5> 
+								      		Video Tutorial
+								      		<a href = "#!" target = "Usage_frame">
+								      			<i class="fa fa-video-camera" aria-hidden="true"></i>
+								      		</a>
+								      	</h5>
+								      	<!-- <img class = "responsive-img" src = ""> -->
+								      		<ul>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				This section has a box plot distribution for each numerical feature which shows the distribution of that feature's values over the dataset.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				Another set of box plot distribution (invisible by default) for each numerical feature is present which shows the distribution of that feature's values over the selection, hence this is visible only when a selection is generated.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				Each Box plot has : Median Line , First quartile - Third Quatile box, whiskers which are placed at 1.5x of IQR (Inter quartile distance).
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				These are affected by selections but doesn't generate selections.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				Hover over any of the parts of plots displays the value of median or 
+								      				quartiles or whisker value depending on the area of box plot being hovered on.
+								      			</li>
+								      		</ul>
+							      	</div>
+							    </li>
+<!-- Tutorial confusion Matrix						     -->
+							    <li>
+									<div class="collapsible-header">
+							      		<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+							      		More into Confusion Matrix
+							      	</div>							    	  
+							      	<div class="collapsible-body">
+							      		<h5> 
+								      		Video Tutorial
+								      		<a href = "#!" target = "Usage_frame">
+								      			<i class="fa fa-video-camera" aria-hidden="true"></i>
+								      		</a>
+								      	</h5>
+								      	<!-- <img class = "responsive-img" src = ""> -->
+								      		<ul>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				This section contains the confusion matrix for the dataset to depict relation between any two confused classes.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				Each pair of Actual-Predicted classes has a cell corresponding to it.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				The measure of each cell is either quantified by a color scale (same sized cells get darker with no. of instances) or size scale (same colored cells get bigger with no. of instances). 
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				Sometimes due to large values of diagonal cells(True Positives), it may overshadow other confused cell values (in terms of size or color scale) hence we have an option to turn off the diagonals to get better view of other non-diagonal (confused) cells.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				These cells are affected by selections and also generate selections, hence are very useful to study relationship between the any two classes using the confused data sample among the classes.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				Hover over any of the cells of matrix displays target class, predicted class and no. of such confused (or correctly identified in case of diagonal cells) instances.
+								      			</li>
+								      		</ul>
+							      	</div>
+							    </li>	
+<!-- Tutorial Data						     -->
+							    <li>
+									<div class="collapsible-header">
+							      		<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+							      		More into Data
+							      	</div>							    	  
+							      	<div class="collapsible-body">
+							      		<h5> 
+								      		Video Tutorial
+								      		<a href = "#!" target = "Usage_frame">
+								      			<i class="fa fa-video-camera" aria-hidden="true"></i>
+								      		</a>
+								      	</h5>
+								      	<!-- <img class = "responsive-img" src = ""> -->
+								      		<ul>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				This section has the dataset in the form of table, broken into pages of maximum 500 records.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				It contains the selection data when selection is active and complete dataset otherwise to give a gist of data corresponding to the selection.
+								      			</li>								      			
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				This section is affected by selections but doesn't generate selections.
+								      			</li>
+								      		</ul>
+							      	</div>
+							    </li>	
+<!-- Tutorial Data						     -->
+							    <li>
+									<div class="collapsible-header">
+							      		<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+							      		What are Selections
+							      	</div>							    	  
+							      	<div class="collapsible-body">
+							      		<h5> 
+								      		Video Tutorial
+								      		<a href = "#!" target = "Usage_frame">
+								      			<i class="fa fa-video-camera" aria-hidden="true"></i>
+								      		</a>
+								      	</h5>
+								      	<!-- <img class = "responsive-img" src = ""> -->
+								      		<ul>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				Selections are a subset of the complete dataset that are activated when any bar of summary distribution or probability histogram or any cell of confusion matrix is clicked.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				Activation of selections causes the data corresponding to the clicked item to replace data in the Data table of Right-pane. 
+								      			</li>								      			
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				The summary distribution, probability distributions and confusion matrix itmes are disabled and new items corresponding to the selection are visible now.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				The box plots are disabled and new plots corresponding to the selection are visible now below the disabled ones to compare.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-cog" aria-hidden="true"></i>
+								      				To remove the selections and return to complete dataset view, click on Clear selection button in Controls on the left-pane.
+								      			</li>
+								      		</ul>
+							      	</div>
+							    </li>								    					    
 							</ul>
 						</div>
 					</div>
 <!-- People Section					 -->
-
 					<div id = "people" class = "section scrollspy">
 						<div class = "section-head center">
 							Our Team
