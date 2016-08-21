@@ -139,6 +139,10 @@ main{
 	color : #263238;
 }
 
+#install .collapsible {
+	margin-top: 2em;
+}
+
 #install .collapsible-header {
 	background-color: #4B4966;
 	color: #D3CDD7;
@@ -157,13 +161,17 @@ main{
 
 #install .collapsible-body h5 {
 	margin: 0;
-	padding: 1em;
+	padding: 0.8em;
 }
 
 #install .collapsible-body ul{
 	margin: 0;
 	padding: 2em;
 	padding-top: 0;
+}
+
+#install .collapsible-body li{
+	margin-bottom: 0.2em;	
 }
 
 #install .collapsible-body a{
@@ -176,8 +184,8 @@ main{
 	color: #e52d27;
 }
 
-#install .collapsible-body .fa-caret-right{
-	padding-right: 1em;
+#install .collapsible-body .fa-cog{
+	padding-right: 0.2em;
 }
 
 #install .code {
@@ -238,6 +246,10 @@ main{
 	color : #263238;
 }
 
+#tutorials .collapsible {
+	margin-top: 2em;
+}
+
 #tutorials .collapsible-header {
 	background-color: #4B4966;
 	color: #D3CDD7;
@@ -256,13 +268,17 @@ main{
 
 #tutorials .collapsible-body h5 {
 	margin: 0;
-	padding: 1em;
+	padding: 0.8em;
 }
 
 #tutorials .collapsible-body ul{
 	margin: 0;
 	padding: 2em;
 	padding-top: 0;
+}
+
+#install .collapsible-body li{
+	margin-bottom: 0.2em;	
 }
 
 #tutorials .collapsible-body a{
@@ -275,8 +291,8 @@ main{
 	color: #e52d27;
 }
 
-#tutorials .collapsible-body .fa-caret-right{
-	padding-right: 1em;
+#tutorials .collapsible-body .fa-cog{
+	padding-right: 0.2em;
 }
 
 #tutorials .code {

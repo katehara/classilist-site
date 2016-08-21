@@ -8,8 +8,6 @@ Contact: medha.classilist@gmail.com
 
 $(document).ready(function(){
 	
-    $('.scrollspy').scrollSpy();
-
-    
+    $('.scrollspy').scrollSpy();    
 
 });
