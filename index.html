@@ -53,7 +53,7 @@ Contact: medha.classilist@gmail.com
 								Classilist sports some features like - <span>class-wise probability distribution, feature view analysis </span>for feature distribution in the dataset, support for<span> RapidMiner, KNIME and R</span> to ease data formatting and export data which will be used by Classilist and also support for <span>WEKA</span> will soon be introduced.
 							</p>
 							<p> 
-								Classilist requires the probabilistic classification data format suited for its use. Data from different applications due to being in varied forms, can't be used directly and needs to be processed. Classilist support plugins available for some of the widely used applications do the data processing for you. Their installation and usage is explained in the further sections.
+								Classilist requires the classification data with class distribution in a format suited for its use. Data from different applications due to being in varied forms, can't be used directly and needs to be processed. Classilist support plugins available for some of the widely used applications do the data processing for you. Their installation and usage is explained in the further sections.
 							</p>
 							<p> 
 								Classilist can be used with data from former or other applications without using the plugins after some manual manipulation of results, mentioned in details in <a href="#tutorials">Tutorials</a> section. 
@@ -84,11 +84,11 @@ Contact: medha.classilist@gmail.com
 								      		<ul>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Download 'Classilist Interface' from <a href = "#downloads">Downloads & Links</a> section<br>
+								      				Download 'Classilist Interface' from <a href = "#downloads">Downloads & Links</a> section
 								      			</li>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Extract the zipped file (classilist.zip) and copy into the desired directory<br>
+								      				Extract the zipped file (classilist.zip) and copy into the desired directory
 								      			</li>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
@@ -116,11 +116,11 @@ Contact: medha.classilist@gmail.com
 								      		<ul>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Install Package 'devtools' [
+								      				Install Package 'devtools' (
 								      				<a href = "https://cran.r-project.org/web/packages/devtools/README.html" target = "_blank"> 
 								      					How to install?
 								      				</a>
-								      				]
+								      				)
 								      			</li>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
@@ -146,7 +146,7 @@ Contact: medha.classilist@gmail.com
 								      		<ul>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Download 'R support package' from <a href = "#downloads">Downloads & Links</a> section<br>
+								      				Download 'R support package' from <a href = "#downloads">Downloads & Links</a> section
 								      			</li>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
@@ -232,7 +232,7 @@ Contact: medha.classilist@gmail.com
 								      			</li>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Start (Restart if already running) KNIME. In your node tree, find Node
+								      				Start (Restart if already running) KNIME. In the node tree, find Node
 								      				<span class = "code">
 								      					Classilist
 								      				</span> 
@@ -260,7 +260,7 @@ Contact: medha.classilist@gmail.com
 								      		<ul>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Download 'WEKA Extension' from <a href = "#downloads">Downloads & Links</a> section<br>
+								      				Download 'WEKA Extension' from <a href = "#downloads">Downloads & Links</a> section
 								      			</li>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
@@ -276,7 +276,7 @@ Contact: medha.classilist@gmail.com
 								      			</li>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				You will find the installed extension in the form of menu extension.<br>
+								      				Restart WEKA and open Explorer. Classilist plugin appears as a new tab.
 								      			</li>
 								      		</ul>
 							      			<h6 class = "msg" style="padding-left:2em; padding-bottom:1em; font-weight: bolder">
@@ -466,220 +466,299 @@ Contact: medha.classilist@gmail.com
 						<div class = "section-body row">
 							Documented and Video tutorials to get you started with Classilist. Video tutorials for usage can be accessed by <i class="fa fa-video-camera" aria-hidden="true"></i> button at the beginning of every section.
 							<ul class="collapsible popout" data-collapsible="accordion">
-<!-- Tutorials Intro							 -->
+<!-- Tutorial data format							 -->
 								<li>
-									<div class="collapsible-header active">
+									<div class="collapsible-header">
 							      		<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-							      		Introduction
+							      		Data : Basic Idea (Recommended Read)
 							      	</div>							    	  
 							      	<div class="collapsible-body">
 							      		<h5> 
-								      		Download & Install
-								      		<a href = "#!" target = "Installation_frame">
+								      		Must-have-components of dataset to be visualized
+								      	</h5>
+								      		<ul>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Target Column : Specifies the actual/target class of data sample.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Predicted Column : Specifies the class predicted by classifier of data sample. 
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Feature Column(s) : Attribute(s) that form the basis of classification.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Probability Column(s) : Attribute(s) that specify the probability of the sample to classified into corresponding class. One Column for each class.
+								      			</li>								      			
+								      		</ul>
+								      	<h5> 
+								      		Methods to process data for Classilist Visualization Dashboard
+								      	</h5>
+								      		<ul>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Use R support Plugin (See : 'How to use R support Plugin')
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Use RapidMiner Operator (See : 'How to use RapidMiner Operator Extension')
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+													Use KNIME Node (See : 'How to use KNIME Node Extension')			
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Use Weka Extension (See : 'How to use WEKA Extension')
+								      			</li>
+								      			<!-- <li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Within Classilist Interface (See : 'How to Process data in Classilist Interface')
+								      			</li> -->								      			
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Process Manually (See : 'How to Manually Process data')
+								      			</li>
+								      		</ul>
+								      	<h5> 
+								      		Format of data (After Processing)
+								      	</h5>
+								      		<ul>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Target Column header : <span class = "code"> A-&ltcolumn_name&gt</span>
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Predicted Column header : <span class = "code"> Predicted</span>
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Feature Column header : <span class = "code"> F-&ltattribute_name&gt</span>
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Probability Column header : <span class = "code"> P-&ltclass_name&gt</span>.
+								      			</li>								      			
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				File format: <span class = "code"> .csv</span>
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				<span class = "code">&ltclass_name&gt</span> in Probability column header, Predicted Column entry, Target Column Entry should be consistent. They are used for mapping and are case-sensitive.
+								      			</li>
+								      		</ul>
+							      	</div>
+							    </li>
+<!-- R plugin Tutorial							     -->
+								<li>
+									<div class="collapsible-header">
+							      		<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+							      		How to use R support Plugin
+							      	</div>							    	  
+							      	<div class="collapsible-body">
+							      		<h5> 
+								      		Video Tutorial
+								      		<a href = "#!" target = "Usage_frame">
 								      			<i class="fa fa-video-camera" aria-hidden="true"></i>
 								      		</a>
 								      	</h5>
 								      		<ul>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Download 'Classilist Interface' from <a href = "#downloads">Downloads & Links</a> section<br>
+								      				Install and load R package<span class="code">classilistR</span>(If not done already).
 								      			</li>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Extract the zipped file (classilist.zip) and copy into the desired directory<br>
+								      				Make sure the data set has all four components (See : 'Data : Basic Idea') and names of probability columns are consistent with those in Target Column for mapping.
 								      			</li>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Now your Classilist Installation directory is
+								      				Use the function 
 								      				<span class = "code"> 
-								      					[current-directory]/classilist
-								      				</span>
+								      					classilist(dataSet, location, features, predicted, actual, probs)
+								      				</span><br>
+								      				<span class = "code">dataSet</span> : Dataset with classified results<br>
+								      				<span class = "code">location</span> : Classilist Installation Directory<br>
+								      				<span class = "code">features</span> : String vector of Feature Attribute(s) name(s)<br>
+								      				<span class = "code">predicted</span> : Predicted column name as String<br>
+								      				<span class = "code">actual</span> : Target/Actual column name as String<br>
+								      				<span class = "code">probs</span> : String vector of Class Probability Attribute(s) name(s). These should be the names of corresponding class.<br> You may be required to do this manually due to different conventions used by various R packages for naming of probability columns.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				You should be able to see the dashboard in the system's default browser. If you want to view the dashboard in another browser, go to Classilist Installation Directory and open
+								      				<span class = "code">index.html</span> with desired browser.
 								      			</li>
 								      		</ul>
 							      	</div>
 							    </li>
-<!-- Install R package							     -->
+<!-- Rapidminer Operator tutorial							     -->
 							    <li>
 									<div class="collapsible-header">
 							      		<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-							      		Install R Package
-							      	</div>		
-							      	<div class="collapsible-body">				    	  
-								      	<h5> 
-								      		Method 1 : Install from Source
-								      		<a href = "#!" target = "Installation_frame">
-								      			<i class="fa fa-video-camera" aria-hidden="true"></i>
-								      		</a>
-								      	</h5>
-								      		<ul>
-								      			<li> 
-								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Install Package 'devtools' [
-								      				<a href = "https://cran.r-project.org/web/packages/devtools/README.html" target = "_blank"> 
-								      					How to install?
-								      				</a>
-								      				]
-								      			</li>
-								      			<li> 
-								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Load Package 'devtools'<br>
-								      				<span class = "code"> 
-								      					library(devtools)
-								      				</span>
-								      			</li>
-								      			<li> 
-								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Install and Load Package 'classilistR' from BitBucket User : typhon23 and Repo : classilistR<br>
-								      				<span class = "code">install_bitbucket("typhon23/classilistR")</span>
-								      				<br>
-													<span class = "code">library(classilistR)</span>
-								      			</li>
-								      		</ul>
-								      	<h5> 
-								      		Method 2 : Download & Install
-								      		<a href = "#!" target = "Installation_frame">
-								      			<i class="fa fa-video-camera" aria-hidden="true"></i>
-								      		</a>
-								      	</h5>
-								      		<ul>
-								      			<li> 
-								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Download 'R support package' from <a href = "#downloads">Downloads & Links</a> section<br>
-								      			</li>
-								      			<li> 
-								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Copy the zipped file (classilistR.zip) into the current working directory.<br>
-								      				Path of Current Working Directory can be found by
-								      				<span class = "code"> 
-								      					getwd()
-								      				</span>
-								      			</li>
-								      			<li> 
-								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Install and Load Package 'classilistR'<br>
-								      				<span class = "code">install.packages("classilistR", repos = NULL)</span>
-								      				<br>
-													<span class = "code">library(classilistR)</span>
-								      			</li>
-								      		</ul>
-									</div>
-							    </li>
-<!-- Install rapidminer plugin							     -->
-							    <li>
-							      	<div class="collapsible-header">
-							      		<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-							      		Install RapidMiner Plugin
-							      	</div>
+							      		How to use RapidMiner Operator Extension
+							      	</div>							    	  
 							      	<div class="collapsible-body">
 							      		<h5> 
-								      		Download & Install 
-								      		<a href = "#!" target = "Installation_frame">
+								      		Video Tutorial
+								      		<a href = "#!" target = "Usage_frame">
 								      			<i class="fa fa-video-camera" aria-hidden="true"></i>
 								      		</a>
 								      	</h5>
 								      		<ul>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Download 'RapidMiner Operator Extension' from <a href = "#downloads">Downloads & Links</a> section.
-								      				If you are asked to 'keep' or 'discard' the .jar file, be sure to choose keep.
+								      				Install RapidMiner Operator Extension(If not done already)
 								      			</li>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Copy the .jar file (classilistRM-1.0.0-all.jar) to the RapidMiner plugins folder.
-								      				Path of RapidMiner plugins folder is :
-								      				<span class = "code"> 
-								      					[rapidminer-studio-home]/lib/plugins
-								      				</span>
-								      			</li>
-								      			<li> 
-								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Start (Restart if already running) RapidMiner. In the operator tree, find Operator
+								      				In the operator tree, find Operator
 								      				<span class = "code">
 								      					Extensions>Classilist>Classilist&nbspGroup>Classilist&nbspExport
 								      				</span>
 								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Use the operator by dragging it into a process. Its ports : <br>
+								      				<span class = "code">inp</span> Input Port : Takes classification results ExampleSet as input, preferably directly from <span class = "code">Apply Model</span>Operator or indirectly from<span class = "code">through</span> ports of following operator(s).<br>
+								      				<span class = "code">thr</span> Through Port: Gives ExampleSet taken in from <span class = "code">inp</span> for use in following operators.<br>
+								      				<span class = "code">fil</span> File Port: Exports data in a file to be directly used by Classilist Interface.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Make the connections as follows : <br>
+								      				<span class = "code">inp</span> : Connect directly to<span class = "code">lab</span>port of<span class = "code">Apply Model</span>Operator or indirectly<span class = "code">through</span>ports of following operator(s).<br>
+								      				<span class = "code">thr</span> : Optional Connection. Can be used to pass the input data to other operators or as Process results.<br>
+								      				<span class = "code">fil</span> : No connection required. 
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Set <span class = "code">location</span> parameter to
+								      				<span class = "code">[classilist-installation-directory]/data/out.csv</span>.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Go to Classilist Installation Directory and open
+								      				<span class = "code">index.html</span> in desired browser.
+								      			</li>
 								      		</ul>
 							      	</div>
 							    </li>
-<!-- Install knime plugin							     -->
-							    <li>
+<!-- KNIME Operator tutorial							     -->
+							   <li>
 									<div class="collapsible-header">
 							      		<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-							      		Install KNIME Plugin
+							      		How to use KNIME Node Plugin
 							      	</div>							    	  
 							      	<div class="collapsible-body">
 							      		<h5> 
-								      		Download & Install
-								      		<a href = "#!" target = "Installation_frame">
+								      		Video Tutorial
+								      		<a href = "#!" target = "Usage_frame">
 								      			<i class="fa fa-video-camera" aria-hidden="true"></i>
 								      		</a>
 								      	</h5>
 								      		<ul>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Download 'KNIME Node Plugin' from <a href = "#downloads">Downloads & Links</a> section. 
-								      				If you are asked to 'keep' or 'discard' the .jar file, be sure to choose keep.
+								      				Install KNIME Node Plugin(If not done already).
 								      			</li>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Copy the .jar file (org.classilist.knime_1.0.0.jar) to the KNIME dropins folder. 
-								      				Path of KNIME dropins folder is :
-								      				<span class = "code"> 
-								      					[KNIME-home]/dropins
-								      				</span>
-								      			</li>
-								      			<li> 
-								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Start (Restart if already running) KNIME. In your node tree, find Node
+								      				In the node tree, find Node
 								      				<span class = "code">
 								      					Classilist
-								      				</span> 
+								      				</span> and drag it into the workflow.
 								      			</li>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				This will also work on Eclipse Installation of KNIME. 
+								      				Connect its input to the output of a Classifier Predictor Node.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Configure the Predictor node to : <br>
+								      				Uncheck <span class = "code">Change prediction column name</span> in order to enable correct data mapping.<br>
+								      				Check <span class = "code">Append columns with normalized class distribution</span> in order to generate Class Probabilities.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Configure the Classilist node to set <span class = "code">Classilist location</span> parameter to
+								      				<span class = "code">[classilist-installation-directory]</span>. This needs to be done every time before execution of node.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Execute the Node. 
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Go to Classilist Installation Directory and open
+								      				<span class = "code">index.html</span> in desired browser.
 								      			</li>
 								      		</ul>
 							      	</div>
-							    </li>
-<!-- Install WEKA Plugin							     -->
-							    <li>
+							    </li> 				
+<!-- WEKA Operator tutorial							     -->
+								<li>
 									<div class="collapsible-header">
 							      		<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-							      		Install WEKA Plugin
+							      		How to use WEKA Extension
 							      	</div>							    	  
 							      	<div class="collapsible-body">
 							      		<h5> 
-								      		Download & Install  
-								      		<a href = "#!" target = "Installation_frame">
+								      		Video Tutorial
+								      		<a href = "#!" target = "Usage_frame">
 								      			<i class="fa fa-video-camera" aria-hidden="true"></i>
 								      		</a>
 								      	</h5>
 								      		<ul>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Download 'WEKA Extension' from <a href = "#downloads">Downloads & Links</a> section<br>
+								      				Install WEKA Extension(If not done already).
 								      			</li>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Start WEKA, go to 'Tools' in Menu-bar, click on 'Package Manager' 
+								      				Load the data for classification in the
+								      				<span class = "code">
+								      					Preprocess
+								      				</span> tab.
 								      			</li>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Select 'File/URL' in top right corner.
+								      				Move to the
+								      				<span class = "code">
+								      					Classify
+								      				</span> tab, select<span class = "code">Output predictions options</span> in the <span class = "code">More options</span> dialog.
 								      			</li>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				Browse and select the downloaded zipped file (classilistWEKA.zip) and click 'Open/OK'.
+								      				Right-click on the respective results history item and select 
+								      				<span class = "code">
+								      					Re-evaluate model
+								      				</span> on current test set to output the predictions.
 								      			</li>
 								      			<li> 
 								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
-								      				You will find the installed extension in the form of menu extension.<br>
+								      				Move to the <span class = "code">Classilist</span> tab.
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Set <span class = "code">Classilist location</span> parameter to
+								      				<span class = "code">[classilist-installation-directory]</span>. 
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Click <span class = "code">Execute</span> 
+								      			</li>
+								      			<li> 
+								      				<i class="fa fa-caret-right" aria-hidden="true"></i>
+								      				Go to Classilist Installation Directory and open
+								      				<span class = "code">index.html</span> in desired browser.
 								      			</li>
 								      		</ul>
-							      			<h6 class = "msg" style="padding-left:2em; padding-bottom:1em; font-weight: bolder">
-							      				WEKA Plugin is in testing phase. It will be made available in the <a href = "#downloads">Downloads & Links</a> section soon.
-							      			</h6>
 							      	</div>
 							    </li>
 							</ul>

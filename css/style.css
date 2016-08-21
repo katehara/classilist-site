@@ -106,7 +106,7 @@ main{
 
 #home h4 {
 	font-family: 'Alegreya Sans SC', sans-serif;
-	font-size: 4em;
+	font-size: 3em;
 }
 
 #about{
@@ -182,7 +182,7 @@ main{
 
 #install .code {
 	font-family: 'Source Code Pro', monospace;
-	font-size: 0.9em;
+	font-size: 1em;
 	padding: 0 0.5em;
 }
 
@@ -196,6 +196,10 @@ main{
 	margin-bottom: 1.5em;
 	margin-left: 0.3em;
 	margin-right: 0.3em;
+}
+
+#downloads table td{
+	padding: 0.7em 0.3em
 }
 
 #downloads table th {
@@ -277,7 +281,7 @@ main{
 
 #tutorials .code {
 	font-family: 'Source Code Pro', monospace;
-	font-size: 0.9em;
+	font-size: 1em;
 	padding: 0 0.5em;
 }
 
