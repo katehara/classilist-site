@@ -74,7 +74,7 @@ main{
 .content .section {
 	min-height: 100% !important;
 	overflow: auto;
-	padding: 2% 8% 2% 8%;
+	padding: 2% 7% 2% 7%;
 }
 
 .section-head {
@@ -106,7 +106,7 @@ main{
 
 #home h4 {
 	font-family: 'Alegreya Sans SC', sans-serif;
-	font-size: 3em;
+	font-size: 4em;
 }
 
 #about{
@@ -192,7 +192,10 @@ main{
 }
 
 #downloads table{
-	margin-top: 2em;
+	margin-top: 0.5em;
+	margin-bottom: 1.5em;
+	margin-left: 0.3em;
+	margin-right: 0.3em;
 }
 
 #downloads table th {
