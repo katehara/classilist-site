@@ -53,7 +53,7 @@ Contact: medha.classilist@gmail.com
 								Classilist sports some features like - <span>class-wise probability distribution, feature view analysis </span>for feature distribution in the dataset, support for<span> RapidMiner, KNIME and R</span> to ease data formatting and export data which will be used by Classilist and also support for <span>WEKA</span> will soon be introduced.
 							</p>
 							<p> 
-								Classilist requires the classification data with class distribution in a format suited for its use. Data from different applications due to being in varied forms, can't be used directly and needs to be processed. Classilist support plugins available for some of the widely used applications do the data processing for you. Their installation and usage is explained in the further sections.
+								Classilist requires the classified data with class distribution in a format suited for its use. Data from different applications due to being in varied forms, can't be used directly and needs to be processed. Classilist support plugins available for some of the widely used applications do the data processing for you. Their installation and usage is explained in the further sections.
 							</p>
 							<p> 
 								Classilist can be used with data from former or other applications without using the plugins after some manual manipulation of results, mentioned in details in <a href="#tutorials">Tutorials</a> section. 
@@ -844,9 +844,10 @@ Contact: medha.classilist@gmail.com
 								      				This will launch the Classilist Interface.
 								      			</li>
 								      			<li> 
-								      				<i class="fa  fa-cog" aria-hidden="true"></i>
-								      				Go to Classilist Installation Directory and open
-								      				<span class = "code">index.html</span> in browser. This will launch the Classilist Interface.
+								      				<i class="fa  fa-cog fa-spin" aria-hidden="true"></i>
+								      				If the interface is launched directly from the file, this may sometimes give a 'Data not found error' if the browser doesn't allow CORS for security issues. In this case, a dialog will appear stating this problems. Upload the file  
+								      				<span class = "code">[classilist-installation-directory]/data/out.csv</span>
+								      				in that dialog and the interface will work fine from here.
 								      			</li>
 								      		</ul>
 								      	<h5> 
@@ -886,6 +887,26 @@ Contact: medha.classilist@gmail.com
 								      				<i class="fa  fa-cog" aria-hidden="true"></i>
 								      				<span class = "list-header">Data : Right Pane - Tab 3</span><br>
 								      				This section contains data samples (max 500 at a time). This area is more useful for selections when it display samples corresponding to selection only. (See : 'More into Data')
+								      			</li>
+								      		</ul>
+								      	<h5> 
+								      		Uploading other data
+								      		<a href = "#!" target = "Usage_frame">
+								      			<i class="fa fa-video-camera" aria-hidden="true"></i>
+								      		</a>
+								      	</h5>
+								      		<ul>
+								      			<li> 
+								      				<i class="fa  fa-cog" aria-hidden="true"></i>
+								      				While working on some data, you may want to load another classified dataset (already in Standard Classilist Format).
+								      			</li>
+								      			<li> 
+								      				<i class="fa  fa-cog" aria-hidden="true"></i>
+								      				Click on file icon on the top right corner of Interface to open the dialog.
+								      			</li>
+								      			<li> 
+								      				<i class="fa  fa-cog" aria-hidden="true"></i>
+								      				Upload the datafile (.csv) and click on 'Done'.
 								      			</li>
 								      		</ul>
 							      	</div>
